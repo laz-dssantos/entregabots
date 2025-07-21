@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntregaBots - Futuro das Entregas</title>
+  <style>
+
+
+
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('imagem.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+
+
+
+    header {
+      background: linear-gradient(135deg, #7e57c2, #9575cd);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgb(255, 255, 255);
+    }
+
+
+
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+
+
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+
+
+
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+
+
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+
+
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+
+
+
+    p {
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+
+
+
+ .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 350px;
+}
+
+
+
+    .card-button {
+      width: 260px;
+      background: linear-gradient(135deg, #7e57c2, #9575cd);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.199);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+
+
+
+    .card-button:hover {
+      transform: translateY(-5px);
+    }
+
+
+
+
+    .toggle-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: transparent;
+      border: none;
+      color: #f700ff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+    }
+
+
+
+
+    .card-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 15px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: #fff;
+    }
+
+
+
+
+    .card-button.active .card-content {
+      max-height: 300px;
+      padding: 15px;
+    }
+
+
+
+
+    .video-button {
+      background: linear-gradient(135deg, #7e57c2, #9575cd);
+      color: white;
+      padding: 12px 55px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 18px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+
+
+
+    .video-button:hover {
+      background: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+
+
+
+    footer {
+      background: linear-gradient(135deg, #7e57c2, #9575cd);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+
+
+
+    #btnTopo {
+      display: none;
+      position: fixed;
+      bottom: 25px;
+      right: 30px;
+      z-index: 100;
+      font-size: 24px;
+      background: #9900ff;
+      color: white;
+      border: none;
+      border-radius: 100%;
+      padding: 12px 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    #btnTopo:hover {
+      background: #9575cd;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-button {
+        width: 90%;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+
+      ol {
+        padding-left: 20px;
+      }
+
+      body {
+        background-attachment: scroll;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="logo2.png" alt="Logo EntregaBots" class="logo">
+    <h1>O Futuro das Entregas: EntregaBots</h1>
+  </div>
+</header>
+
+<section>
+  <h2>O que são?</h2>
+  <strong style="color: #7b1fa2;">Com nosso novo modelo: FutBots</strong>
+  <p>Os EntregaBots são robôs autônomos ou semiautônomos que entregam a bola de maneira tecnológica e estilosa durante eventos esportivos.
+    Eles chamam atenção, geram engajamento com o público, demonstram inovação das marcas envolvidas e evitam atrasos ou erros humanos nos protocolos.</p>
+
+  <h2>Resumo — Como funciona os bots</h2>
+  <div class="cards">
+    <div class="card-button">
+      <button class="toggle-btn">Construção</button>
+      <div class="card-content">
+        <p>Desenvolvidos sob medida por engenheiros ou patrocinadores. Possuem estrutura compacta e rodas motorizadas para se locomoverem com eficiência.</p>
+      </div>
+    </div>
+
+    <div class="card-button">
+      <button class="toggle-btn">Controle</button>
+      <div class="card-content">
+        <p>Usam controle remoto ou sistema semiautônomo. Alguns contam com sensores, GPS e câmeras para evitar obstáculos e seguir rotas.</p>
+      </div>
+    </div>
+
+    <div class="card-button">
+      <button class="toggle-btn">Marketing</button>
+      <div class="card-content">
+        <p>Além da entrega, os bots viram atração! Promovem marcas, fazem parte da experiência do evento e geram mídia espontânea.</p>
+      </div>
+    </div>
+
+    <div class="card-button">
+      <button class="toggle-btn">Funcionamento</button>
+      <div class="card-content">
+        <p>Operados via rádio, Wi-Fi ou Bluetooth. Em eventos de alto nível, se conectam com sistemas do estádio para entregas precisas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funcionamento">
+  <h2>Como Funciona na Prática</h2>
+  <p>Veja como os EntregaBots cumprem sua missão em campo, com precisão e estilo:</p>
+
+  <ol>
+    <li><strong>Carregamento:</strong> O bot é preparado com a bola nos bastidores.</li>
+    <li><strong>Navegação:</strong> Ele segue uma rota predeterminada até o centro do campo.</li>
+    <li><strong>Entrega:</strong> Para suavemente e “entrega” a bola pro árbitro ou jogador.</li>
+    <li><strong>Retorno:</strong> Volta à base ou fica estacionado fora do campo.</li>
+  </ol>
+
+  <div style="margin-top: 30px; text-align: center;">
+    <a href="https://www.youtube.com/watch?v=g9NfW01vtCE" target="_blank" class="video-button">
+      ▶ Ver funcionamento na prática
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Site desenvolvido por 
+    <a href="https://www.instagram.com/lazaromachadod" target="_blank" style="color: #fff; text-decoration: underline;">
+      Lázaro Machado Dos Santos
+    </a> - 2025. Colaboradores - Felipe, Giulia, Liz, Julia.
+  </p>
+</footer>
+
+<button onclick="scrollToTop()" id="btnTopo" title="Voltar ao topo">↑</button>
+
+<script>
+  // Botão voltar ao topo
+  window.onscroll = function () {
+    const btn = document.getElementById("btnTopo");
+    btn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Accordion interativo
+  const cards = document.querySelectorAll('.card-button');
+
+  cards.forEach(card => {
+    const btn = card.querySelector('.toggle-btn');
+    btn.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
